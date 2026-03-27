@@ -1,19 +1,14 @@
-<script setup>
-const info = {
-  name: 'zsy',
-
-  age: 18
-};
-console.log(info);
-</script>
-
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit
-    <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to
-    read the documentation
-  </p>
+  <div class="app">
+    <router-view></router-view>
+  </div>
 </template>
 
-<style scoped></style>
+<script setup></script>
+
+<style lang="less" scoped>
+.app {
+  height: 100vh;
+  width: 100vw;
+}
+</style>
